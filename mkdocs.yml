@@ -41,11 +41,15 @@ nav:
   - 频道指南:
     - 频道总览: channels/index.md
     - 主频道指南: channels/main-channel.md
+    - 笔记频道指南: channels/notes-channel.md
   - 学习方法:
     - 学习指南: learning/index.md
     - 每日流程: learning/daily-routine.md
   - 工具指南: tools/index.md
   - 学习资源: resources/index.md
+  - 学习历程:
+    - 历程记录指南: journey/index.md
+    - 系统创建里程碑: journey/milestone-2026-04-07-system-creation.md
 
 markdown_extensions:
   - admonition
