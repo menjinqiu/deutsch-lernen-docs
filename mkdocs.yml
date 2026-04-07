@@ -43,6 +43,7 @@ nav:
     - 主频道指南: channels/main-channel.md
     - 笔记频道指南: channels/notes-channel.md
   - 学习方法:
+    - 完整学习指南: learning/complete-learning-guide.md
     - 学习指南: learning/index.md
     - 每日流程: learning/daily-routine.md
     - 周计划模板: learning/weekly-plan-template.md
@@ -52,6 +53,7 @@ nav:
   - 学习历程:
     - 历程记录指南: journey/index.md
     - 系统创建里程碑: journey/milestone-2026-04-07-system-creation.md
+    - 系统优化总结: journey/system-optimization-summary.md
 
 markdown_extensions:
   - admonition
