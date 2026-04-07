@@ -164,10 +164,10 @@ def main():
     success, message = pusher.auto_push()
     
     if success:
-        print(f"✅ {message}")
+        print(f"[SUCCESS] {message}")
         return 0
     else:
-        print(f"❌ {message}")
+        print(f"[FAILED] {message}")
         return 1
 
 if __name__ == "__main__":
