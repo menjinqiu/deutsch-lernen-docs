@@ -1,0 +1,89 @@
+site_name: Discord德语学习文档
+site_description: Discord德语学习系统完整文档中心
+site_author: menjinqiu
+repo_url: https://github.com/menjinqiu/deutsch-lernen-docs
+repo_name: menjinqiu/deutsch-lernen-docs
+
+theme:
+  name: material
+  palette:
+    - scheme: default
+      primary: indigo
+      accent: indigo
+      toggle:
+        icon: material/brightness-7
+        name: Switch to dark mode
+    - scheme: slate
+      primary: indigo
+      accent: indigo
+      toggle:
+        icon: material/brightness-4
+        name: Switch to light mode
+  features:
+    - navigation.tabs
+    - navigation.sections
+    - navigation.expand
+    - navigation.indexes
+    - navigation.top
+    - search.suggest
+    - search.highlight
+    - content.tabs.link
+    - content.code.annotate
+
+plugins:
+  - search
+
+nav:
+  - 首页: index.md
+  - 入门指南:
+    - 系统概述: getting-started/overview.md
+    - 快速开始: getting-started/quick-start.md
+  - 频道指南:
+    - 频道总览: channels/index.md
+  - 学习方法: learning/index.md
+  - 工具指南: tools/index.md
+  - 学习资源: resources/index.md
+
+markdown_extensions:
+  - admonition
+  - codehilite
+  - extra
+  - meta
+  - nl2br
+  - sane_lists
+  - smarty
+  - toc:
+      permalink: true
+  - pymdownx.arithmatex
+  - pymdownx.betterem:
+      smart_enable: all
+  - pymdownx.caret
+  - pymdownx.critic
+  - pymdownx.details
+  - pymdownx.emoji:
+      emoji_index: !!python/name:material.extensions.emoji.twemoji
+      emoji_generator: !!python/name:material.extensions.emoji.to_svg
+  - pymdownx.highlight
+  - pymdownx.inlinehilite
+  - pymdownx.keys
+  - pymdownx.magiclink
+  - pymdownx.mark
+  - pymdownx.smartsymbols
+  - pymdownx.snippets
+  - pymdownx.superfences
+  - pymdownx.tabbed:
+      alternate_style: true
+  - pymdownx.tasklist:
+      custom_checkbox: true
+  - pymdownx.tilde
+
+extra:
+  social:
+    - icon: fontawesome/brands/github
+      link: https://github.com/menjinqiu
+    - icon: fontawesome/brands/discord
+      link: https://discord.gg/
+
+copyright: |
+  &copy; 2026 menjinqiu. 本作品采用 <a href="https://creativecommons.org/licenses/by-nc-sa/4.0/" target="_blank" rel="noopener">CC BY-NC-SA 4.0</a> 许可协议。
+  文档维护：齐天大圣德语教练 🐒
