@@ -1,0 +1,32 @@
+{
+  "git": {
+    "repo_path": "C:/Users/men/.openclaw/workspace/deutsch-docs",
+    "remote_url": "https://github.com/menjinqiu/deutsch-lernen-docs.git",
+    "branch": "master",
+    "commit_message_prefix": "自动更新: "
+  },
+  "auto_push": {
+    "enabled": true,
+    "check_interval_minutes": 30,
+    "max_retries": 3,
+    "retry_delay_seconds": 10
+  },
+  "discord_integration": {
+    "enabled": true,
+    "channel_id": "1490922589303083021",
+    "notify_on_success": true,
+    "notify_on_failure": true
+  },
+  "logging": {
+    "level": "INFO",
+    "log_file": "auto_push.log",
+    "max_file_size_mb": 10,
+    "backup_count": 5
+  },
+  "security": {
+    "use_ssh": false,
+    "ssh_key_path": "",
+    "use_token": true,
+    "token_env_var": "GITHUB_TOKEN"
+  }
+}
