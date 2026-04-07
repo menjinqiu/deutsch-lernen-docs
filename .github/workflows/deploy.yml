@@ -36,7 +36,6 @@ jobs:
         run: |
           python -m pip install --upgrade pip
           pip install mkdocs-material
-          pip install mkdocs-git-revision-date-localized-plugin
 
       - name: Build site
         run: mkdocs build --site-dir site
@@ -45,6 +44,8 @@ jobs:
         uses: actions/upload-pages-artifact@v3
         with:
           path: ./site
+          # 明确指定 artifact 名称，避免多个同名 artifact
+          name: github-pages
 
   deploy:
     environment:
