@@ -48,7 +48,9 @@ nav:
     - 每日流程: learning/daily-routine.md
     - 周计划模板: learning/weekly-plan-template.md
     - 第1个月计划: learning/month-1-plan.md
-  - 工具指南: tools/index.md
+  - 工具指南:
+    - 工具总览: tools/index.md
+    - Notion同步系统: tools/notion-sync-system.md
   - 学习资源: resources/index.md
   - 学习历程:
     - 历程记录指南: journey/index.md

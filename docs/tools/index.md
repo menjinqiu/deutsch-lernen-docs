@@ -205,27 +205,38 @@
 - 演示工具使用
 - 协作学习活动
 
-### 机器人功能配置
+## 🔧 **高级配置指南**
 
-#### 每日提醒机器人
-**功能**：
-- 定时发送学习任务
-- 进度提醒
-- 打卡统计
-
-**配置示例**：
+### 智能系统高级配置
+**性能优化配置**：
 ```yaml
-reminders:
-  morning: "07:00 今日德语学习开始"
-  noon: "12:00 午间听力练习"
-  evening: "19:00 晚间口语练习"
+performance:
+  sync_batch_size: 50      # 同步批处理大小
+  analysis_concurrency: 2  # 分析并发数
+  cache_ttl: 3600         # 缓存时间(秒)
+  retry_attempts: 3       # 重试次数
 ```
 
-#### 学习统计机器人
-**功能**：
-- 学习时长统计
-- 进度可视化
-- 成就系统
+**个性化学习配置**：
+```json
+{
+  "learning_style": "visual",
+  "preferred_time": "morning",
+  "difficulty_adjustment": "auto",
+  "review_frequency": "daily",
+  "exercise_preference": ["interactive", "practical"]
+}
+```
+
+**通知偏好配置**：
+```yaml
+notifications:
+  sync_complete: true
+  progress_update: "daily"
+  exercise_reminder: true
+  achievement_unlock: true
+  system_maintenance: false
+```
 
 ## 🔄 自动化工具
 
