@@ -65,6 +65,16 @@ nav:
     - 语法知识网络: knowledge-network/grammar-network.md
     - 发音知识网络: knowledge-network/pronunciation-network.md
     - 表达知识网络: knowledge-network/expression-network.md
+  - 知识库系统:
+    - 知识库总览: knowledge-library/index.md
+    - L1单元知识库: knowledge-library/units/L1.md
+    - L2单元知识库: knowledge-library/units/L2.md
+    - 词汇知识库: knowledge-library/categories/vocabulary.md
+    - 语法知识库: knowledge-library/categories/grammar.md
+    - 发音知识库: knowledge-library/categories/pronunciation.md
+    - 表达知识库: knowledge-library/categories/expression.md
+    - 知识搜索: knowledge-library/search.md
+    - 学习路径: knowledge-library/learning-paths.md
 
 markdown_extensions:
   - admonition
