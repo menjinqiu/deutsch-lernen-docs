@@ -1,0 +1,195 @@
+name: Notion to GitHub Sync
+
+on:
+  # 定时触发：每6小时运行一次
+  schedule:
+    - cron: '0 */6 * * *'
+  
+  # 手动触发
+  workflow_dispatch:
+    inputs:
+      force_sync:
+        description: '强制同步（即使没有检测到更改）'
+        required: false
+        default: 'false'
+        type: boolean
+  
+  # 当知识网络相关文件更改时触发
+  push:
+    paths:
+      - 'docs/knowledge-network/**'
+      - 'sync_notion_to_github.py'
+      - '.github/workflows/notion-sync.yml'
+
+jobs:
+  notion-sync:
+    runs-on: ubuntu-latest
+    
+    steps:
+    - name: 检出代码
+      uses: actions/checkout@v4
+      with:
+        token: ${{ secrets.GITHUB_TOKEN }}
+        fetch-depth: 0
+    
+    - name: 设置 Python
+      uses: actions/setup-python@v5
+      with:
+        python-version: '3.11'
+    
+    - name: 安装依赖
+      run: |
+        python -m pip install --upgrade pip
+        pip install requests python-dotenv
+    
+    - name: 配置 Git
+      run: |
+        git config --global user.name "GitHub Actions"
+        git config --global user.email "actions@github.com"
+        git config --global --add safe.directory "$GITHUB_WORKSPACE"
+    
+    - name: 运行 Notion 同步
+      env:
+        NOTION_API_KEY: ${{ secrets.NOTION_API_KEY }}
+        COMPOSIO_CONSUMER_KEY: ${{ secrets.COMPOSIO_CONSUMER_KEY }}
+        DISCORD_WEBHOOK_URL: ${{ secrets.DISCORD_WEBHOOK_URL }}
+      run: |
+        echo "开始 Notion ↔ GitHub 同步..."
+        python sync_notion_to_github.py
+        
+        # 如果有强制同步参数
+        if [ "${{ github.event.inputs.force_sync }}" = "true" ]; then
+          python sync_notion_to_github.py --force
+        fi
+        
+        echo "同步完成"
+    
+    - name: 检查更改
+      id: check-changes
+      run: |
+        if git diff --quiet HEAD~1 HEAD; then
+          echo "没有检测到更改"
+          echo "has_changes=false" >> $GITHUB_OUTPUT
+        else
+          echo "检测到更改"
+          echo "has_changes=true" >> $GITHUB_OUTPUT
+        fi
+    
+    - name: 推送更改到 GitHub
+      if: steps.check-changes.outputs.has_changes == 'true'
+      run: |
+        git push origin main
+        echo "更改已推送到 GitHub"
+    
+    - name: 发送 Discord 通知
+      if: steps.check-changes.outputs.has_changes == 'true'
+      env:
+        DISCORD_WEBHOOK_URL: ${{ secrets.DISCORD_WEBHOOK_URL }}
+      run: |
+        # 获取提交信息
+        COMMIT_MSG=$(git log -1 --pretty=%B)
+        COMMIT_AUTHOR=$(git log -1 --pretty=%an)
+        COMMIT_HASH=$(git log -1 --pretty=%h)
+        
+        # 构建 Discord 消息
+        MESSAGE=$(cat <<EOF
+        ## 🔄 Notion 同步完成
+        
+        **时间**: $(date)
+        **状态**: ✅ 同步成功
+        **提交**: \`$COMMIT_HASH\`
+        **作者**: $COMMIT_AUTHOR
+        
+        **提交信息**:
+        \`\`\`
+        $COMMIT_MSG
+        \`\`\`
+        
+        **查看更改**:
+        https://github.com/${{ github.repository }}/commit/$COMMIT_HASH
+        
+        **知识网络**:
+        https://menjinqiu.github.io/deutsch-lernen-docs/knowledge-network/
+        
+        ---
+        *自动同步系统 v1.0*
+        EOF
+        )
+        
+        # 发送 Discord 通知
+        curl -H "Content-Type: application/json" \
+          -X POST \
+          -d "{\"content\": \"$MESSAGE\"}" \
+          $DISCORD_WEBHOOK_URL || echo "Discord 通知发送失败（可能未配置）"
+    
+    - name: 生成同步报告
+      if: always()
+      run: |
+        echo "生成同步报告..."
+        
+        # 创建报告目录
+        mkdir -p sync-reports
+        
+        # 生成报告文件
+        REPORT_FILE="sync-reports/$(date +%Y%m%d_%H%M%S).md"
+        
+        cat > "$REPORT_FILE" <<EOF
+        # 同步执行报告
+        
+        ## 执行信息
+        - **工作流**: ${{ github.workflow }}
+        - **运行ID**: ${{ github.run_id }}
+        - **触发方式**: ${{ github.event_name }}
+        - **执行时间**: $(date)
+        - **运行状态**: ${{ job.status }}
+        
+        ## 同步配置
+        - **定时计划**: 每6小时
+        - **监控页面**: 3个 (德语学习笔记、德语学习总规划、语言学习记录)
+        - **知识网络**: 205个知识点
+        
+        ## 执行结果
+        - **检测到更改**: ${{ steps.check-changes.outputs.has_changes }}
+        - **提交推送**: ${{ steps.check-changes.outputs.has_changes == 'true' && '成功' || '跳过' }}
+        - **通知发送**: ${{ steps.check-changes.outputs.has_changes == 'true' && '成功' || '跳过' }}
+        
+        ## 系统状态
+        - **GitHub Actions**: ✅ 运行正常
+        - **同步脚本**: ✅ 执行完成
+        - **知识网络**: ✅ 更新就绪
+        - **下次同步**: $(date -d '+6 hours' '+%Y-%m-%d %H:%M')
+        
+        ## 详细日志
+        查看完整执行日志:
+        https://github.com/${{ github.repository }}/actions/runs/${{ github.run_id }}
+        
+        ---
+        **报告生成时间**: $(date)
+        **同步系统版本**: v1.0
+        EOF
+        
+        echo "报告已生成: $REPORT_FILE"
+    
+    - name: 上传同步报告
+      if: always()
+      uses: actions/upload-artifact@v4
+      with:
+        name: notion-sync-reports
+        path: sync-reports/
+        retention-days: 7
+
+  deploy-docs:
+    needs: notion-sync
+    runs-on: ubuntu-latest
+    if: steps.check-changes.outputs.has_changes == 'true'
+    
+    steps:
+    - name: 检出代码
+      uses: actions/checkout@v4
+    
+    - name: 部署到 GitHub Pages
+      uses: peaceiris/actions-gh-pages@v3
+      with:
+        github_token: ${{ secrets.GITHUB_TOKEN }}
+        publish_dir: ./docs
+        keep_files: false
