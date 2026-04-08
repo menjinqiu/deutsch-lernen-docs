@@ -1,0 +1,152 @@
+{
+  "metadata": {
+    "generated_at": "2026-04-09T00:51:08.959941",
+    "exercise_count": 5,
+    "knowledge_points_covered": 5,
+    "categories": [
+      "pronunciation",
+      "expression",
+      "grammar"
+    ],
+    "units": [
+      "L2",
+      "L1"
+    ]
+  },
+  "exercises": [
+    {
+      "id": "expr_L2_expression_006_20260409005108",
+      "type": "expression",
+      "difficulty": "A1",
+      "knowledge_points": [
+        {
+          "id": "L2_expression_006",
+          "text": "L2单元expression知识点6",
+          "category": "expression",
+          "unit": "L2"
+        }
+      ],
+      "question": "在以下情景中，应该说什么：\n\nL2单元expression知识点6",
+      "options": [
+        "不合适的表达3",
+        "不合适的表达2",
+        "合适的表达1",
+        "不合适的表达4"
+      ],
+      "correct_answer": "合适的表达1",
+      "explanation": "在这个情景中，合适的表达是...",
+      "hints": [
+        "注意礼貌程度和场合"
+      ],
+      "time_limit": null,
+      "points": 12
+    },
+    {
+      "id": "expr_L2_expression_020_20260409005108",
+      "type": "expression",
+      "difficulty": "A1",
+      "knowledge_points": [
+        {
+          "id": "L2_expression_020",
+          "text": "L2单元expression知识点20",
+          "category": "expression",
+          "unit": "L2"
+        }
+      ],
+      "question": "在以下情景中，应该说什么：\n\nL2单元expression知识点20",
+      "options": [
+        "合适的表达1",
+        "不合适的表达2",
+        "不合适的表达3",
+        "不合适的表达4"
+      ],
+      "correct_answer": "合适的表达1",
+      "explanation": "在这个情景中，合适的表达是...",
+      "hints": [
+        "注意礼貌程度和场合"
+      ],
+      "time_limit": null,
+      "points": 12
+    },
+    {
+      "id": "grammar_L2_grammar_016_20260409005108",
+      "type": "grammar",
+      "difficulty": "A1",
+      "knowledge_points": [
+        {
+          "id": "L2_grammar_016",
+          "text": "L2单元grammar知识点16",
+          "category": "grammar",
+          "unit": "L2"
+        }
+      ],
+      "question": "请改正以下句子中的语法错误：\n\nL2单元grammar知识点16",
+      "options": [
+        "改正后的句子4",
+        "改正后的句子1",
+        "改正后的句子2",
+        "改正后的句子3"
+      ],
+      "correct_answer": "改正后的句子1",
+      "explanation": "原句中的语法错误是...，正确的应该是...",
+      "hints": [
+        "注意动词变位和词序"
+      ],
+      "time_limit": null,
+      "points": 15
+    },
+    {
+      "id": "grammar_L2_grammar_019_20260409005108",
+      "type": "grammar",
+      "difficulty": "A1",
+      "knowledge_points": [
+        {
+          "id": "L2_grammar_019",
+          "text": "L2单元grammar知识点19",
+          "category": "grammar",
+          "unit": "L2"
+        }
+      ],
+      "question": "请改正以下句子中的语法错误：\n\nL2单元grammar知识点19",
+      "options": [
+        "改正后的句子1",
+        "改正后的句子3",
+        "改正后的句子4",
+        "改正后的句子2"
+      ],
+      "correct_answer": "改正后的句子1",
+      "explanation": "原句中的语法错误是...，正确的应该是...",
+      "hints": [
+        "注意动词变位和词序"
+      ],
+      "time_limit": null,
+      "points": 15
+    },
+    {
+      "id": "pron_L1_pronunciation_013_20260409005108",
+      "type": "pronunciation",
+      "difficulty": "A1",
+      "knowledge_points": [
+        {
+          "id": "L1_pronunciation_013",
+          "text": "L1单元pronunciation知识点13",
+          "category": "pronunciation",
+          "unit": "L1"
+        }
+      ],
+      "question": "请选择单词 'L1单元pronunciation知识点13' 的正确发音：",
+      "options": [
+        "发音描述2",
+        "发音描述3",
+        "发音描述1"
+      ],
+      "correct_answer": "发音描述1",
+      "explanation": "'L1单元pronunciation知识点13' 的正确发音是...",
+      "hints": [
+        "注意元音长度和辅音清浊"
+      ],
+      "time_limit": null,
+      "points": 10
+    }
+  ]
+}

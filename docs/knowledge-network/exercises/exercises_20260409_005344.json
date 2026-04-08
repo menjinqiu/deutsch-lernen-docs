@@ -1,0 +1,100 @@
+{
+  "metadata": {
+    "generated_at": "2026-04-09T00:53:44.695034",
+    "exercise_count": 3,
+    "knowledge_points_covered": 3,
+    "categories": [
+      "grammar",
+      "exercise",
+      "expression"
+    ],
+    "units": [
+      "L1",
+      "L3",
+      "L2"
+    ]
+  },
+  "exercises": [
+    {
+      "id": "expr_L3_expression_011_20260409005344",
+      "type": "expression",
+      "difficulty": "A1",
+      "knowledge_points": [
+        {
+          "id": "L3_expression_011",
+          "text": "L3单元expression知识点11",
+          "category": "expression",
+          "unit": "L3"
+        }
+      ],
+      "question": "在以下情景中，应该说什么：\n\nL3单元expression知识点11",
+      "options": [
+        "不合适的表达4",
+        "合适的表达1",
+        "不合适的表达2",
+        "不合适的表达3"
+      ],
+      "correct_answer": "合适的表达1",
+      "explanation": "在这个情景中，合适的表达是...",
+      "hints": [
+        "注意礼貌程度和场合"
+      ],
+      "time_limit": null,
+      "points": 12
+    },
+    {
+      "id": "grammar_L1_grammar_011_20260409005344",
+      "type": "grammar",
+      "difficulty": "A1",
+      "knowledge_points": [
+        {
+          "id": "L1_grammar_011",
+          "text": "L1单元grammar知识点11",
+          "category": "grammar",
+          "unit": "L1"
+        }
+      ],
+      "question": "请改正以下句子中的语法错误：\n\nL1单元grammar知识点11",
+      "options": [
+        "改正后的句子3",
+        "改正后的句子1",
+        "改正后的句子4",
+        "改正后的句子2"
+      ],
+      "correct_answer": "改正后的句子1",
+      "explanation": "原句中的语法错误是...，正确的应该是...",
+      "hints": [
+        "注意动词变位和词序"
+      ],
+      "time_limit": null,
+      "points": 15
+    },
+    {
+      "id": "vocab_L2_exercise_020_20260409005344",
+      "type": "vocabulary",
+      "difficulty": "A1",
+      "knowledge_points": [
+        {
+          "id": "L2_exercise_020",
+          "text": "L2单元exercise知识点20",
+          "category": "exercise",
+          "unit": "L2"
+        }
+      ],
+      "question": "请选择 'L2单元exercise知识点20' 的正确中文意思：",
+      "options": [
+        "错误的意思3",
+        "错误的意思2",
+        "正确的意思",
+        "错误的意思1"
+      ],
+      "correct_answer": "正确的意思",
+      "explanation": "'L2单元exercise知识点20' 的正确中文意思是 '正确的意思'。",
+      "hints": [
+        "注意单词的词性和用法"
+      ],
+      "time_limit": null,
+      "points": 10
+    }
+  ]
+}
