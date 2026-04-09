@@ -1,4 +1,20 @@
-# L1 单元知识库 - 重构版
+#!/usr/bin/env python3
+"""
+知识库重构脚本
+基于 Notion 实际内容重新设计知识库结构
+"""
+
+import os
+from pathlib import Path
+import datetime
+
+def create_redesigned_l1_unit():
+    """创建重构版的 L1 单元知识库"""
+    
+    # 首先替换原来的 L1 单元页面
+    l1_path = Path(__file__).parent / "docs" / "knowledge-library" / "units" / "L1.md"
+    
+    content = f"""# L1 单元知识库
 
 ## 📚 单元概述
 
@@ -322,7 +338,7 @@ B: Ich komme aus Beijing.
 
 ---
 
-**最后更新**: 2026年4月9日 10:20  
+**最后更新**: {datetime.datetime.now().strftime('%Y年%m月%d日 %H:%M')}  
 **内容来源**: 你的 Notion L1 单元学习笔记  
 **重构原则**: 去除空洞内容，提取具体价值  
 **学习状态**: 待开始学习  
