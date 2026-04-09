@@ -90,3 +90,108 @@
 **生成时间**: 2026年4月9日 09:44
 **学习状态**: 待开始
 **掌握目标**: 90%以上掌握
+
+
+### 从 Notion 提取的 L1 单元基础词汇
+
+#### 基础词汇列表
+
+##### 1. 连接词
+- **aber**: but 但是
+- **und**: and 并且
+- **oder**: or 或者
+
+##### 2. 代词
+- **Sie**: 您 (正式)
+- **ich**: 我
+- **du**: 你 (非正式)
+- **Ihnen**: 您 (与格)
+- **dir**: 你 (与格)
+
+##### 3. 动词
+- **hören**: 听
+- **sprechen**: 说
+- **lesen**: 读
+- **ergänzen**: 填写
+- **an/kreuzen**: (填表，答题)打勾，勾选
+- **weiß, weißt**: 知道
+- **heißen**: 叫做
+- **kommen**: 来
+- **geht**: 过，进行 (gehen的第三人称单数)
+
+##### 4. 问候语
+- **Hallo!**: 你好！(搭讪，随意打招呼)
+- **Guten Morgen!**: 早上好 (5-10a.m.)
+- **Morgen!**: 早上好 (简写)
+- **Guten Tag!**: 你好！(白天用)
+- **Guten Abend**: 晚上好 (6-10p.m.)
+- **Gute Nacht!**: 晚安
+
+##### 5. 告别语
+- **Auf Wiedersehen!**: 期待再见 (正式)
+- **Tschüss!**: Bye！(非正式)
+- **Ciao**: 再见 (意大利语)
+- **Bis morgen**: 明天见！
+- **Bis gleich**: 一会见！
+- **Bis bald**: 期待不久之后见
+
+##### 6. 其他词汇
+- **bitte**: please 请
+- **long-kurz**: 长 - 短
+- **richtig-falsch**: 正确 - 错误
+- **was**: what 什么
+- **wo**: where 哪里
+- **Tag**: day 白天，一天
+- **Morgen**: morning 早晨，清晨
+- **Abend**: 傍晚
+- **Nacht**: night 夜晚
+- **Wie**: how 怎么样
+- **Danke**: 谢谢
+- **gut**: 好
+- **auch**: 也
+- **sehr**: 非常
+- **angenehm**: 愉快的，惬意的
+- **nicht**: 不
+- **schlecht**: 不好
+- **Solala**: 一般般
+- **ja**: 是
+- **nein**: 不是
+- **aus**: 从...
+- **woher**: 从哪？
+
+##### 7. 常用表达
+
+###### 问候对话
+1. **Wie geht es Ihnen?** - 您过得怎么样？(正式)
+   - 回答: **Danke gut. Und Ihnen?** - 谢谢，不错！您呢？
+   
+2. **Wie geht's? / Wie geht es dir?** - 你过得怎么样？(非正式)
+   - 回答: **Danke gut, Und dir?** - 谢谢，不错！你呢？
+   - 回答: **Auch gut, danke!** - 也挺好的，谢谢！
+
+###### 状态表达
+- **Sehr gut** - 非常好
+- **Nicht schlecht!** - 不差
+- **Solala!** - 一般般！
+- **Schlecht** - 不好
+
+###### 个人信息询问
+1. **Wie heißt du?** - 你叫什么名字？
+   - 回答: **Ich heiß XiaoLin. Und du?** - 我叫小林，你呢？
+   
+2. **Kommst du aus Shanghai?** - 你来自上海吗？
+   - 回答: **Nein, ich komme aus Beijing. Und du?** - 不是，我来自北京，你呢？
+   
+3. **Woher kommst du?** - 你是从哪来的？
+
+###### 礼貌表达
+- **bitte** - 请
+- **Danke** - 谢谢
+- **Sehr angenehm** - 非常高兴（认识你）
+
+---
+
+**内容来源**: Notion L1 单元笔记
+**提取时间**: 2026年04月09日 10:12
+**词汇数量**: 40+ 个基础词汇
+**更新状态**: 内容深度优化完成

@@ -214,3 +214,100 @@
 **生成时间**: 2026年4月9日 09:59
 **学习状态**: 待开始
 **掌握目标**: 90%以上准确
+
+
+### 从 Notion 提取的 L1 单元对话示例
+
+#### 基础对话练习
+
+##### 对话 1: 问候与回应
+```
+A: Wie geht es dir? (你怎么样？)
+B: Danke, gut. Und dir? (谢谢，很好。你呢？)
+A: Auch gut, danke! (也很好，谢谢！)
+```
+
+##### 对话 2: 自我介绍
+```
+A: Wie heißt du? (你叫什么名字？)
+B: Ich heiß XiaoLin. Und du? (我叫小林，你呢？)
+A: Ich heiß XiaoMing. (我叫小明)
+B: Sehr angenehm! (非常高兴认识你！)
+```
+
+##### 对话 3: 询问来源
+```
+A: Kommst du aus Shanghai? (你来自上海吗？)
+B: Nein, ich komme aus Beijing. Und du? (不是，我来自北京，你呢？)
+A: Ich komme aus Shanghai. (我来自上海)
+```
+
+##### 对话 4: 详细询问
+```
+A: Woher kommst du? (你是从哪来的？)
+B: Ich komme aus Beijing. (我来自北京)
+```
+
+#### 常用对话模式
+
+##### 正式问候
+```
+A: Guten Tag! Wie geht es Ihnen? (您好！您过得怎么样？)
+B: Guten Tag! Danke, gut. Und Ihnen? (您好！谢谢，不错。您呢？)
+A: Auch gut, danke. (也挺好，谢谢)
+```
+
+##### 非正式问候
+```
+A: Hallo! Wie geht's? (嗨！怎么样？)
+B: Hallo! Danke, gut. Und dir? (嗨！谢谢，不错。你呢？)
+A: Auch gut! (也挺好！)
+```
+
+##### 时间问候
+```
+早晨: Guten Morgen! (早上好！)
+白天: Guten Tag! (你好！)
+傍晚: Guten Abend! (晚上好！)
+晚上: Gute Nacht! (晚安！)
+```
+
+##### 告别表达
+```
+正式: Auf Wiedersehen! (期待再见！)
+非正式: Tschüss! (拜拜！)
+约定: Bis morgen! (明天见！)
+```
+
+#### 情景表达练习
+
+##### 餐厅场景
+```
+服务员: Guten Tag! Was möchten Sie bestellen? (您好！您想点什么？)
+顾客: Guten Tag! Ich möchte eine Pizza, bitte. (您好！我想要一个披萨，请)
+服务员: Eine Pizza. Sonst noch etwas? (一个披萨。还要别的吗？)
+顾客: Nein, danke. Das ist alles. (不用了，谢谢。就这些)
+```
+
+##### 购物场景
+```
+顾客: Entschuldigung, haben Sie dieses Buch? (不好意思，你们有这本书吗？)
+店员: Ja, wir haben es. Es kostet 20 Euro. (是的，我们有。20欧元)
+顾客: Gut, ich nehme es. (好的，我要了)
+```
+
+##### 问路场景
+```
+游客: Entschuldigung, wo ist der Bahnhof? (不好意思，火车站在哪？)
+当地人: Gehen Sie geradeaus, dann links. (直走，然后左转)
+游客: Wie weit ist es? (有多远？)
+当地人: Etwa 10 Minuten zu Fuß. (大约步行10分钟)
+游客: Vielen Dank! (非常感谢！)
+当地人: Bitte schön! (不客气！)
+```
+
+---
+
+**内容来源**: Notion L1 单元笔记
+**提取时间**: 2026年04月09日 10:12
+**更新状态**: 内容深度优化完成
