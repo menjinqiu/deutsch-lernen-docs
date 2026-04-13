@@ -1,0 +1,11 @@
+{
+  "name": "memory-backup-2026-04-13T09-00-21-984Z",
+  "timestamp": "2026-04-13T09:00:22.161Z",
+  "fileCount": 52,
+  "totalSize": 150573,
+  "config": {
+    "version": "1.0.0",
+    "includeFiles": 5,
+    "excludeFiles": 3
+  }
+}
